@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox fx:controller="com.example.tp2.HelloController" prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="404.0" prefWidth="645.0" VBox.vgrow="ALWAYS">
+            <children>
+                <ImageView fitHeight="157.0" fitWidth="230.0" layoutX="50.0" layoutY="105.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@city_vert.jpg" />
+                    </image>
+                </ImageView>
+                <ImageView fitHeight="166.0" fitWidth="251.0" layoutX="340.0" layoutY="113.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@terrain_grey.jpg" />
+                    </image>
+                </ImageView>
+                <Button layoutX="145.0" layoutY="279.0" prefHeight="30.0" prefWidth="100.0" text="Ville" onAction="#ButtonClickCity" />
+                <Button layoutX="426.0" layoutY="279.0" prefHeight="30.0" prefWidth="100.0" text="Tout terrains" onAction="#ButtonClickAllTerrain" />
+            </children>
+        </AnchorPane>
+    </children>
+</VBox>

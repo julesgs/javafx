@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.tp2.TerrainController">
+   <children>
+      <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" VBox.vgrow="ALWAYS">
+         <children>
+            <Label fx:id="label_title" id="label_title" alignment="TOP_CENTER" layoutX="287.0" layoutY="14.0" text="Vélo Tout Terrains" />
+            <ImageView fitHeight="292.0" fitWidth="342.0" layoutX="42.0" layoutY="65.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@terrain_grey.jpg" />
+               </image>
+            </ImageView>
+            <Label layoutX="413.0" layoutY="65.0" text="Taille" />
+            <RadioButton fx:id="radio_s" id="radio_s" layoutX="412.0" layoutY="94.0" mnemonicParsing="false" text="S">
+               <toggleGroup>
+                  <ToggleGroup fx:id="sizeToggleGroup" />
+               </toggleGroup>
+            </RadioButton>
+            <RadioButton fx:id="radio_m" id="radio_m" layoutX="453.0" layoutY="94.0" mnemonicParsing="false" text="M" toggleGroup="$sizeToggleGroup" />
+            <RadioButton fx:id="radio_l" id="radio_l" layoutX="495.0" layoutY="94.0" mnemonicParsing="false" text="L" toggleGroup="$sizeToggleGroup" />
+            <Label layoutX="414.0" layoutY="125.0" text="Couleur du Cadre" />
+            <Button fx:id="cadre_rouge" id="cadre_rouge" layoutX="409.0" layoutY="188.0" mnemonicParsing="false" style="-fx-background-color: red;" />
+            <Button fx:id="cadre_vert" id="cadre_vert" layoutX="411.0" layoutY="152.0" mnemonicParsing="false" style="-fx-background-color: green;" />
+            <Button fx:id="cadre_jaune" id="cadre_jaune" layoutX="498.0" layoutY="150.0" mnemonicParsing="false" style="-fx-background-color: E1D000;" />
+            <Button fx:id="cadre_orange" id="cadre_orange" layoutX="498.0" layoutY="187.0" mnemonicParsing="false" style="-fx-background-color: orange;" />
+            <Label layoutX="432.0" layoutY="156.0" text=" 0 €" />
+            <Label layoutX="521.0" layoutY="155.0" text=" 80 €" />
+            <Label layoutX="436.0" layoutY="192.0" text="90 €" />
+            <Label layoutX="526.0" layoutY="191.0" text="150 €" />
+            <Label layoutX="409.0" layoutY="238.0" text="Personnalisation" />
+            <CheckBox fx:id="check_personnalise" id="check_personnalise" layoutX="410.0" layoutY="264.0" mnemonicParsing="false" prefHeight="18.0" prefWidth="182.0" text="Texte personalisé (+70 €)" />
+            <TextField fx:id="field_text" id="field_text" layoutX="410.0" layoutY="291.0" />
+            <Label layoutX="41.0" layoutY="308.0" text="Votre commande :" />
+            <Label layoutX="55.0" layoutY="332.0" text="- Taille :" />
+            <Label layoutX="54.0" layoutY="350.0" text="- Couleur :" />
+            <Label layoutX="54.0" layoutY="368.0" text="- Personnalisation :" />
+            <Label fx:id="label_taille" id="label_taille" layoutX="104.0" layoutY="332.0" text="Label" />
+            <Label fx:id="label_couleur" id="label_couleur" layoutX="114.0" layoutY="350.0" text="Label" />
+            <Label fx:id="label_personnalisation" id="label_personnalisation" layoutX="163.0" layoutY="368.0" text="Label" />
+            <Button layoutX="349.0" layoutY="354.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="112.0" text="Commander" />
+            <Label layoutX="358.0" layoutY="333.0" text="Total :" />
+            <Label fx:id="label_total" id="label_total" layoutX="406.0" layoutY="333.0" text="Label" />
+            <Label layoutX="459.0" layoutY="333.0" text="€" />
+         </children>
+      </AnchorPane>
+   </children>
+</VBox>
